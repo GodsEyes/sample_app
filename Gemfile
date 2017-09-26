@@ -6,12 +6,12 @@ gem 'rails', '4.2.8'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
 gem 'sqlite3'
-gem 'rspec-rails', '2.13.1'
+gem 'rspec-rails', '3.6.1'
 end
 
 group :test do
 gem 'selenium-webdriver','2.35.1'
-gem 'capybara','2.1.0'
+gem 'capybara','2.2.0'
 end
 
 gem 'tzinfo-data'
