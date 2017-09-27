@@ -2,17 +2,22 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.8'
-gem 'pg','0.15.1'
+gem 'pg'
+
 
 # Use sqlite3 as the database for Active Record
 group :development, :test do
 #gem 'sqlite3'
-gem 'rspec-rails', '3.6.1'
+  gem 'rspec-rails', '3.6.1'
+  gem 'guard-rspec'
+  gem 'spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
 end
 
 group :test do
-gem 'selenium-webdriver','2.35.1'
-gem 'capybara','2.2.0'
+  gem 'selenium-webdriver', '2.35.1'
+  gem 'capybara', '2.2.0'
 
 end
 
@@ -31,10 +36,10 @@ gem 'coffee-rails', '4.0.1'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails','3.0.4'
+gem 'jquery-rails', '3.0.4'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks','1.1.1'
+gem 'turbolinks', '1.1.1'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '1.0.2'
@@ -42,7 +47,7 @@ gem 'jbuilder', '1.0.2'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc','0.3.20', require: false
+  gem 'sdoc', '0.3.20', require: false
 end
 
 # Use ActiveModel has_secure_password
@@ -59,5 +64,5 @@ end
 
 group :production do
 
-gem 'rails_12factor','0.0.2'
+  gem 'rails_12factor', '0.0.2'
 end
